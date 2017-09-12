@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace OperatorsExpressionsandStatements
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            int x, y, a, b;
+
+            //Assignment operator
+            x = 3;
+            y = 2;
+            a = 1;
+            b = 0;
+
+            //There are many mathematicla operators...
+
+            // Addition operator
+            x = 3 + 4;
+
+            // Subtraction Operator
+
+            x = 4 - 3;
+
+            // Multiplication Operator
+            x = 10 * 5;
+
+            //Division operator
+
+            x = 10 / 5;
+
+            //There are many operators used to evalute values...
+
+            //There are also comparison operators. 
+
+            //There are alos conditonal operators. Like and && or, or || 
+
+        }
+    }
+}
