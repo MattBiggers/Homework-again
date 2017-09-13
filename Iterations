@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace Irations
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            for (int myValue = 0; myValue < 10; myValue++);
+            {
+                // Console.WriteLine(int.ToString()); 
+                // This makes a list of numbers 0 through 9
+
+                if (myValue == 7){
+                    Console.WriteLine("Found seven!");
+                    break;
+
+                    // An if statement that just makes the code count to 7. 
+                }
+            }
+            Console.ReadLine(myValue); 
+        }  
+    }
+}
