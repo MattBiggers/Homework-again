@@ -1,0 +1,31 @@
+﻿using System;
+
+namespace CreatingAndCallingSimpleOverloadedHelperMethods
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            //string myValue = superSecretFormula("World");
+            // Second verson of the method
+            string myValue = superSecretFormula("Hello sunshine");
+            Console.WriteLine(myValue);
+            Console.ReadLine();
+        }
+        // private means it can only be called in this class
+        // public means outside of the class.
+        // makes it so that you can reuse your code. 
+        private static string superSecretFormula()
+        // camel casem above ^
+        {
+            // some cool stuff here
+
+            return "hello world";
+        }
+
+        private static string superSecretFormula (string name)
+        {
+            return String.Format("Hello, {0}!", name);
+        }
+    }
+}
