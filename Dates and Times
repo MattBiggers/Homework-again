@@ -1,0 +1,49 @@
+﻿using System;
+
+namespace DatesAndTimes
+{
+	class MainClass
+	{
+		public static void Main(string[] args)
+		{
+			DateTime myValue = DateTime.Now;
+
+			//Console.WriteLine(myValue.ToString()); 
+
+
+			// Console.Write(myValue.ToShortDateString());
+
+			// Console.WriteLine(myValue.ToLongTimeString());
+
+			// Console.WriteLine(myValue.ToLongDateString());
+
+			//Console.WriteLine(myValue.AddDays(3).ToLongDateString());
+
+			// Console.WriteLine(myValue.AddHours(3).ToShortTimeString());
+
+			//Console.WriteLine(myValue.AddDays(-3).ToShortTimeString());
+
+			//  Console.WriteLine(myValue.Month.ToString());
+
+			//  Console.WriteLine(myValue.);
+
+			// DateTime myBirthday = new DateTime(1344, 2, 12);
+
+			// Console.WriteLine(myBirthday.ToShortDateString());
+
+			DateTime myBirthday = DateTime.Parse("2/12/42");
+			TimeSpan myAge = DateTime.Now.Subtract(myBirthday);
+			Console.WriteLine(myAge.TotalDays);
+
+            //tells the date in threes days
+
+			Console.ReadLine();
+
+            //This allows you to make statements so that they are more readable
+
+            //Chaining multiple methods saves the number of character that you have
+            //to type which saves time.
+		}
+	}
+}
+

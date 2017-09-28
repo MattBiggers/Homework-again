@@ -1,0 +1,29 @@
+﻿using System;
+
+namespace readTextFileWhile
+{
+	class MainClass
+	{
+		public static void Main(string[] args)
+		{
+			StreamReader myReader = new StreamReader("Values.txt");
+            //This works like a straw and sucks in data 1 at a time
+
+			string line = "";
+
+			while (line != null)
+                //null = unknown
+			{
+				line = myReader.ReadLine();
+				if (line != null)
+					Console.WriteLine(line);
+			}
+
+			myReader.Close();
+			Console.ReadLine();
+
+            //If you don't close this file you can leave reference to use file. 
+
+		}
+	}
+}
